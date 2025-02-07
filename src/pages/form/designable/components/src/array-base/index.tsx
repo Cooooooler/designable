@@ -314,7 +314,7 @@ const MoveDown = forwardRef<HTMLSpanElement, CommonProps>((props, ref) => {
       onClick={(e) => {
         if (self?.disabled) return;
         e.stopPropagation();
-        console.log('movedown')
+        console.log(props)
         if (props.onClick) {
           props.onClick(e);
           if (e.defaultPrevented) return;

@@ -1,17 +1,13 @@
 import {
   ArrayTable,
   Cascader,
-  Checkbox,
   DatePicker,
   Editable,
-  Form,
   FormCollapse,
   FormGrid,
   FormItem,
   FormLayout,
   FormTab,
-  Input,
-  NumberPicker,
   PreviewText,
   Reset,
   Space,
@@ -27,12 +23,20 @@ import { createSchemaField } from '@formily/react';
 import { TreeNode } from '@trionesdev/designable-core';
 import { transformToSchema } from '@trionesdev/designable-formily-transformer';
 import { IDesignerComponents } from '@trionesdev/designable-react';
-import { Card, Rate, Slider } from 'antd';
+import { Slider } from 'antd';
 import React, { useMemo } from 'react';
-
-import { Password, Radio, Select } from './components/src';
-
-import {ArrayCards} from './components/src/array-cards/ArrayCards'
+import {
+  Card,
+  Checkbox,
+  Form,
+  Input,
+  NumberPicker,
+  Password,
+  Radio,
+  Rate,
+  Select,
+} from './components/src';
+import { ArrayCards } from './components/src/array-cards/ArrayCards';
 
 const Text: React.FC<{
   value?: string;
@@ -84,8 +88,8 @@ export interface IPreviewWidgetProps {
 
 export const PreviewWidget: React.FC<IPreviewWidgetProps> = (props) => {
   const form = useMemo(() => createForm(), []);
-  console.log(props.tree)
   const { form: formProps, schema } = transformToSchema(props.tree);
+  console.log(formProps);
   return (
     <Form {...formProps} form={form}>
       <SchemaField schema={schema} />

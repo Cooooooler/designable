@@ -55,6 +55,7 @@ export const InternalArrayCards: ReactFC<CardProps> = observer((props) => {
       const items = Array.isArray(schema.items)
         ? schema.items[index] || schema.items[0]
         : schema.items;
+      console.log(items,'itemsitems')
       const title = (
         <span>
           {items ? (

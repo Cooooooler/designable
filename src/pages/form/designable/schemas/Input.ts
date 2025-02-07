@@ -23,6 +23,10 @@ export const Input: ISchema & { TextArea?: ISchema } = {
       'x-decorator': 'FormItem',
       'x-component': 'Input',
     },
+    showCount: {
+      'x-decorator': 'FormItem',
+      'x-component': 'Switch',
+    },
     allowClear: {
       type: 'boolean',
       'x-decorator': 'FormItem',
@@ -48,7 +52,7 @@ export const Input: ISchema & { TextArea?: ISchema } = {
     },
     size: {
       type: 'string',
-      enum: ['large', 'small', 'middle', null],
+      enum: ['large', 'small', 'middle'],
       'x-decorator': 'FormItem',
       'x-component': 'Select',
       'x-component-props': {

@@ -1,7 +1,5 @@
 import {
   ArrayTable,
-  Cascader,
-  DatePicker,
   Editable,
   FormCollapse,
   FormGrid,
@@ -12,22 +10,18 @@ import {
   Reset,
   Space,
   Submit,
-  Switch,
-  TimePicker,
-  Transfer,
-  TreeSelect,
-  Upload,
 } from '@formily/antd-v5';
 import { createForm } from '@formily/core';
 import { createSchemaField } from '@formily/react';
 import { TreeNode } from '@trionesdev/designable-core';
 import { transformToSchema } from '@trionesdev/designable-formily-transformer';
 import { IDesignerComponents } from '@trionesdev/designable-react';
-import { Slider } from 'antd';
 import React, { useMemo } from 'react';
 import {
   Card,
+  Cascader,
   Checkbox,
+  DatePicker,
   Form,
   Input,
   NumberPicker,
@@ -35,6 +29,12 @@ import {
   Radio,
   Rate,
   Select,
+  Slider,
+  Switch,
+  TimePicker,
+  Transfer,
+  TreeSelect,
+  Upload,
 } from './components/src';
 import { ArrayCards } from './components/src/array-cards/ArrayCards';
 

@@ -34,13 +34,21 @@ import { JSONTree } from 'react-json-tree';
 import {
   ArrayCards,
   Card,
+  Cascader,
   Checkbox,
+  DatePicker,
   Input,
   NumberPicker,
   Password,
   Radio,
   Rate,
   Select,
+  Slider,
+  Switch,
+  TimePicker,
+  Transfer,
+  TreeSelect,
+  Upload,
 } from './components/src';
 import { PreviewWidget } from './PreviewWidget';
 
@@ -109,6 +117,14 @@ function Index() {
     FormGrid,
     Space,
     Checkbox,
+    Cascader,
+    DatePicker,
+    Switch,
+    TreeSelect,
+    Slider,
+    TimePicker,
+    Transfer,
+    Upload,
   };
 
   return (
@@ -131,7 +147,23 @@ function Index() {
               <CompositePanel.Item title="panels.Component" icon="Component">
                 <ResourceWidget
                   title="sources.Inputs"
-                  sources={[Input, Password, NumberPicker, Rate, Radio, Select, Checkbox]}
+                  sources={[
+                    Input,
+                    Password,
+                    NumberPicker,
+                    Rate,
+                    Radio,
+                    Select,
+                    Checkbox,
+                    Cascader,
+                    DatePicker,
+                    Switch,
+                    TreeSelect,
+                    Slider,
+                    TimePicker,
+                    Transfer,
+                    Upload,
+                  ]}
                 />
                 <ResourceWidget title="sources.Layouts" sources={[Card, FormGrid, Space]} />
                 <ResourceWidget title="sources.Arrays" sources={[ArrayCards, ArrayTable]} />

@@ -35,3 +35,4 @@ export * from './time-picker';
 export * from './transfer';
 export * from './tree-select';
 export * from './upload';
+export * from './slider';

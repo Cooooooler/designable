@@ -1,13 +1,6 @@
 import { PageContainer } from '@ant-design/pro-components';
 import { createDesigner, GlobalRegistry, KeyCode, Shortcut } from '@trionesdev/designable-core';
-import {
-  ArrayTable,
-  Field,
-  Form,
-  FormGrid,
-  Space,
-  Text,
-} from '@trionesdev/designable-formily-antd';
+import { ArrayTable, Field, Form, FormGrid, Space } from '@trionesdev/designable-formily-antd';
 import { transformToSchema } from '@trionesdev/designable-formily-transformer';
 import {
   ComponentTreeWidget,
@@ -48,6 +41,7 @@ import {
   TimePicker,
   Transfer,
   TreeSelect,
+  Text,
   Upload,
 } from './components/src';
 import { PreviewWidget } from './PreviewWidget';
@@ -125,6 +119,7 @@ function Index() {
     TimePicker,
     Transfer,
     Upload,
+    Text,
   };
 
   return (

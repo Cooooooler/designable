@@ -13,9 +13,33 @@ export const Text: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Select',
       'x-component-props': {
-        defaultValue: 'normal',
+        defaultValue: 'Text',
       },
-      enum: ['h1', 'h2', 'h3', 'p', 'normal'],
+      enum: ['Text', 'Link', 'Title', 'Paragraph'],
     },
+    code: {
+      type: 'boolean',
+      'x-decorator': 'FormItem',
+      'x-component': 'Switch',
+      'x-component-props': {
+        defaultChecked: false,
+      },
+    },
+    copyable:{
+      type: 'boolean',
+      'x-decorator': 'FormItem',
+      'x-component': 'Switch',
+      'x-component-props': {
+        defaultChecked: false,
+      },
+    },
+    delete:{
+      type: 'boolean',
+      'x-decorator': 'FormItem',
+      'x-component': 'Switch',
+      'x-component-props': {
+        defaultChecked: false,
+      },
+    }
   },
 };

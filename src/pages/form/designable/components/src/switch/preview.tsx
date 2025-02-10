@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch as AntdSwitch } from 'antd';
+import { Switch as AntdSwitch } from './Switch';
 import { createBehavior, createResource } from '@trionesdev/designable-core';
 import { DnFC } from '@trionesdev/designable-react';
 import { createFieldSchema } from '../Field';

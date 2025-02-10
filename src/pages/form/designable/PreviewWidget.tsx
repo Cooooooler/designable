@@ -31,21 +31,13 @@ import {
   Select,
   Slider,
   Switch,
+  Text,
   TimePicker,
   Transfer,
   TreeSelect,
   Upload,
 } from './components/src';
 import { ArrayCards } from './components/src/array-cards/ArrayCards';
-
-const Text: React.FC<{
-  value?: string;
-  content?: string;
-  mode?: 'normal' | 'h1' | 'h2' | 'h3' | 'p';
-}> = ({ value, mode, content, ...props }) => {
-  const tagName = mode === 'normal' || !mode ? 'div' : mode;
-  return React.createElement(tagName, props, value || content);
-};
 
 const SchemaField = createSchemaField({
   components: {
@@ -62,7 +54,6 @@ const SchemaField = createSchemaField({
     Cascader,
     Editable,
     Input,
-    Text,
     NumberPicker,
     Switch,
     Password,
@@ -78,6 +69,7 @@ const SchemaField = createSchemaField({
     Card,
     Slider,
     Rate,
+    Text,
   },
 });
 

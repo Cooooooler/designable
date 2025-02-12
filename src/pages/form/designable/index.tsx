@@ -1,6 +1,6 @@
 import { PageContainer } from '@ant-design/pro-components';
 import { createDesigner, GlobalRegistry, KeyCode, Shortcut } from '@trionesdev/designable-core';
-import { ArrayTable, Field, Form, FormGrid, Space } from '@trionesdev/designable-formily-antd';
+import { ArrayTable, Field, FormGrid, Space } from '@trionesdev/designable-formily-antd';
 import { transformToSchema } from '@trionesdev/designable-formily-transformer';
 import {
   ComponentTreeWidget,
@@ -30,6 +30,7 @@ import {
   Cascader,
   Checkbox,
   DatePicker,
+  Form,
   Input,
   NumberPicker,
   Password,
@@ -38,10 +39,10 @@ import {
   Select,
   Slider,
   Switch,
+  Text,
   TimePicker,
   Transfer,
   TreeSelect,
-  Text,
   Upload,
 } from './components/src';
 import { PreviewWidget } from './PreviewWidget';

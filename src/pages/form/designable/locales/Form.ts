@@ -5,6 +5,7 @@ export const Form = createLocales(Component, {
   'zh-CN': {
     title: '表单',
     settings: {
+      onAutoSubmit: '提交行为',
       labelCol: '标签网格宽度',
       wrapperCol: '组件网格宽度',
       colon: '是否有冒号',
@@ -39,6 +40,7 @@ export const Form = createLocales(Component, {
   'en-US': {
     title: 'Form',
     settings: {
+      onAutoSubmit: 'Submit Behavior',
       labelCol: 'Label Col',
       wrapperCol: 'Wrapper Col',
       colon: 'Colon',
@@ -79,6 +81,7 @@ export const Form = createLocales(Component, {
   'ko-KR': {
     title: '폼',
     settings: {
+      onAutoSubmit: '폼 집합',
       labelCol: 'Label Col',
       wrapperCol: 'Wrapper Col',
       colon: 'Colon',

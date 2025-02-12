@@ -156,6 +156,15 @@ importers:
       '@ant-design/pro-cli':
         specifier: ^2.1.5
         version: 2.1.5(encoding@0.1.13)
+      '@babel/parser':
+        specifier: ^7.22.10
+        version: 7.23.6
+      '@monaco-editor/loader':
+        specifier: ^1.3.3
+        version: 1.4.0(monaco-editor@0.41.0)
+      '@monaco-editor/react':
+        specifier: ^4.5.1
+        version: 4.6.0(monaco-editor@0.41.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@testing-library/react':
         specifier: ^13.4.0
         version: 13.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -219,6 +228,9 @@ importers:
       mockjs:
         specifier: ^1.1.0
         version: 1.1.0
+      monaco-editor:
+        specifier: ^0.41.0
+        version: 0.41.0
       prettier:
         specifier: ^3.1.1
         version: 3.1.1
@@ -231,9 +243,15 @@ importers:
       prettier-plugin-two-style-order:
         specifier: ^1.0.1
         version: 1.0.1(prettier@3.1.1)
+      react-color:
+        specifier: ^2.19.3
+        version: 2.19.3(react@18.2.0)
       react-dev-inspector:
         specifier: ^1.9.0
         version: 1.9.0(eslint@8.56.0)(react@18.2.0)(typescript@4.9.5)(webpack@5.89.0)
+      react-tiny-popover:
+        specifier: ^7.2.4
+        version: 7.2.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       swagger-ui-dist:
         specifier: ^4.19.1
         version: 4.19.1
@@ -12346,26 +12364,26 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.0
 
-  '@stylelint/postcss-css-in-js@0.37.3(postcss-syntax@0.36.2(postcss@7.0.39))(postcss@7.0.39)':
+  '@stylelint/postcss-css-in-js@0.37.3(postcss-syntax@0.36.2)(postcss@7.0.39)':
     dependencies:
       '@babel/core': 7.23.7
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss@8.4.33)
     transitivePeerDependencies:
       - supports-color
 
-  '@stylelint/postcss-css-in-js@0.38.0(postcss-syntax@0.36.2(postcss-html@0.36.0)(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@8.4.33)':
+  '@stylelint/postcss-css-in-js@0.38.0(postcss-syntax@0.36.2(postcss@8.4.33))(postcss@8.4.33)':
     dependencies:
       '@babel/core': 7.23.6
       postcss: 8.4.33
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss@8.4.33)
     transitivePeerDependencies:
       - supports-color
 
-  '@stylelint/postcss-markdown@0.36.2(postcss-syntax@0.36.2(postcss@7.0.39))(postcss@7.0.39)':
+  '@stylelint/postcss-markdown@0.36.2(postcss-syntax@0.36.2)(postcss@7.0.39)':
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss@8.4.33)
       remark: 13.0.0
       unist-util-find-all-after: 3.0.2
     transitivePeerDependencies:
@@ -13364,7 +13382,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.23.6
       '@babel/eslint-parser': 7.23.3(@babel/core@7.23.6)(eslint@8.35.0)
-      '@stylelint/postcss-css-in-js': 0.38.0(postcss-syntax@0.36.2(postcss-html@0.36.0)(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@8.4.33)
+      '@stylelint/postcss-css-in-js': 0.38.0(postcss-syntax@0.36.2(postcss@8.4.33))(postcss@8.4.33)
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint@8.35.0)(typescript@4.9.5)
       '@typescript-eslint/parser': 5.62.0(eslint@8.35.0)(typescript@4.9.5)
       '@umijs/babel-preset-umi': 4.1.0
@@ -13390,7 +13408,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.23.6
       '@babel/eslint-parser': 7.23.3(@babel/core@7.23.6)(eslint@8.56.0)
-      '@stylelint/postcss-css-in-js': 0.38.0(postcss-syntax@0.36.2(postcss-html@0.36.0)(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@8.4.33)
+      '@stylelint/postcss-css-in-js': 0.38.0(postcss-syntax@0.36.2(postcss@8.4.33))(postcss@8.4.33)
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint@8.56.0)(typescript@4.9.5)
       '@typescript-eslint/parser': 5.62.0(eslint@8.56.0)(typescript@4.9.5)
       '@umijs/babel-preset-umi': 4.1.0
@@ -18694,11 +18712,11 @@ snapshots:
     dependencies:
       postcss: 8.4.33
 
-  postcss-html@0.36.0(postcss-syntax@0.36.2(postcss@7.0.39))(postcss@7.0.39):
+  postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39):
     dependencies:
       htmlparser2: 3.10.1
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss@8.4.33)
 
   postcss-image-set-function@4.0.7(postcss@8.4.33):
     dependencies:
@@ -18878,7 +18896,7 @@ snapshots:
     dependencies:
       postcss: 7.0.39
     optionalDependencies:
-      postcss-html: 0.36.0(postcss-syntax@0.36.2(postcss@7.0.39))(postcss@7.0.39)
+      postcss-html: 0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39)
       postcss-less: 3.1.4
       postcss-scss: 2.1.1
 
@@ -21082,8 +21100,8 @@ snapshots:
 
   stylelint@13.13.1:
     dependencies:
-      '@stylelint/postcss-css-in-js': 0.37.3(postcss-syntax@0.36.2(postcss@7.0.39))(postcss@7.0.39)
-      '@stylelint/postcss-markdown': 0.36.2(postcss-syntax@0.36.2(postcss@7.0.39))(postcss@7.0.39)
+      '@stylelint/postcss-css-in-js': 0.37.3(postcss-syntax@0.36.2)(postcss@7.0.39)
+      '@stylelint/postcss-markdown': 0.36.2(postcss-syntax@0.36.2)(postcss@7.0.39)
       autoprefixer: 9.8.8
       balanced-match: 2.0.0
       chalk: 4.1.2
@@ -21109,7 +21127,7 @@ snapshots:
       micromatch: 4.0.5
       normalize-selector: 0.2.0
       postcss: 7.0.39
-      postcss-html: 0.36.0(postcss-syntax@0.36.2(postcss@7.0.39))(postcss@7.0.39)
+      postcss-html: 0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39)
       postcss-less: 3.1.4
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1

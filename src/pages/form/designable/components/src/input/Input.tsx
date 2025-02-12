@@ -8,7 +8,6 @@ import { PreviewText } from '../preview-text'
 const InternalInput: ReactFC<InputProps> = connect(
   AntdInput,
   mapProps((props, field) => {
-    console.log(props,field)
     return {
       ...props,
       suffix: (

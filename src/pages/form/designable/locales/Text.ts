@@ -29,6 +29,13 @@ export const Text = {
             defaultChecked: false,
           },
         },
+        editable: {
+          title: '可编辑',
+          'x-component': 'Switch',
+          'x-component-props': {
+            defaultChecked: false,
+          },
+        },
       },
     },
   },
@@ -62,6 +69,13 @@ export const Text = {
             defaultChecked: false,
           },
         },
+        editable: {
+          title: 'Editable',
+          'x-component': 'Switch',
+          'x-component-props': {
+            defaultChecked: false,
+          },
+        },
       },
     },
   },
@@ -89,6 +103,13 @@ export const Text = {
           },
         },
         delete: {
+          title: '커뮤니티',
+          'x-component': 'Switch',
+          'x-component-props': {
+            defaultChecked: false,
+          },
+        },
+        editable: {
           title: '커뮤니티',
           'x-component': 'Switch',
           'x-component-props': {

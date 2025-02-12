@@ -16,13 +16,13 @@ import { createSchemaField } from '@formily/react';
 import { TreeNode } from '@trionesdev/designable-core';
 import { transformToSchema } from '@trionesdev/designable-formily-transformer';
 import { IDesignerComponents } from '@trionesdev/designable-react';
+import { Button } from 'antd';
 import React, { useMemo } from 'react';
 import {
   Card,
   Cascader,
   Checkbox,
   DatePicker,
-  Form,
   Input,
   NumberPicker,
   Password,
@@ -38,6 +38,7 @@ import {
   Upload,
 } from './components/src';
 import { ArrayCards } from './components/src/array-cards/ArrayCards';
+import { Form } from './components/src/form/Form';
 
 const SchemaField = createSchemaField({
   components: {
@@ -85,6 +86,9 @@ export const PreviewWidget: React.FC<IPreviewWidgetProps> = (props) => {
   return (
     <Form {...formProps} form={form}>
       <SchemaField schema={schema} />
+      <Button type={'primary'} htmlType={'submit'}>
+        提交
+      </Button>
     </Form>
   );
 };

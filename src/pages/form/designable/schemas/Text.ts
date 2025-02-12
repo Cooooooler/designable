@@ -25,7 +25,7 @@ export const Text: ISchema = {
         defaultChecked: false,
       },
     },
-    copyable:{
+    copyable: {
       type: 'boolean',
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
@@ -33,13 +33,18 @@ export const Text: ISchema = {
         defaultChecked: false,
       },
     },
-    delete:{
+    delete: {
       type: 'boolean',
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
       'x-component-props': {
         defaultChecked: false,
       },
-    }
+    },
+    editable: {
+      type: 'object',
+      'x-decorator': 'FormItem',
+
+    },
   },
 };

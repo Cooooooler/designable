@@ -3,7 +3,7 @@ import {
   DataSourceSetter,
   ReactionsSetter,
   ValidatorSetter,
-} from '@trionesdev/designable-formily-setters';
+} from '../../../setters';
 import { FormItemSwitcher } from '../../../common/FormItemSwitcher';
 import { AllSchemas } from '../../../schemas';
 
